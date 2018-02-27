@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Янис Дрейманис](https://up.htmlacademy.ru/htmlcss/20/user/553411).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Туров](https://htmlacademy.ru/profile/turov).
 
 ---
 
