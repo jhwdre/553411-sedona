@@ -1,12 +1,133 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
+  	<div class="wrapper">
+  
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <header class="main-header">
+      <nav class="main-navigation">
+      	<a class="main-header-logo">
+      	  <img src="img/index-logo.svg" width="137" height="70" alt="Логотип города Седона">
+      	</a>
+        <ul class="site-navigation">
+          <li><a href="info.html">Информация</a></li>
+          <li><a href="media.html">Фото и видео</a></li>
+          <li><a href="map.html">Карта штата</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
+        </ul>		
+      </nav>
+    </header>
 
+
+    <main class="container">
+
+      <div class="intro">
+      	<img src="img/text.png" width="" height="" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks">
+      </div>
+      <div class="definition">
+        <h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон</p> 	
+      </div>
+
+      <section class="reasons">
+	    <h2 class="visually-hidden">Причины - посейтить</h2>
+	  <ol class="reasons-list">
+
+	    <li class="reasons-item">
+		  <div class="reasons-inner">
+		    <h3 class="header-text">Настоящий городок</h3>
+            <span class="elements">№1</span>
+            <p class="description">Седона - это не аттракцион для туристов, там течет своя жизнь</p>
+		  </div>
+		  <img src="img/city.svg" width="800" height="250" alt="Город">
+		  <ul class="first-feauture-list">
+		  	<li class="advertising">
+		  	  <h3>Жилье</h3>
+              <p >Рекомендуем пожить в настоящем мотеле, все как в кино</p>	
+		  	</li>
+		  	<li class="advertising">
+		  	  <h3>Еда</h3>
+              <p >Всегда заказывайте бургер, вы не разочаруетесь</p>	
+		  	</li>
+		  	<li class="advertising">
+		  	  <h3>Сувениры</h3>            
+              <p >Не только китайского, но и местного производства!</p>	
+		  	</li>
+		  </ul>
+		</li>
+
+		<li class="reasons-item">
+		  <img src="img/city.svg" width="800" height="250" alt="Город">
+		  <div class="reasons-inner">
+		    <h3 class="header-text">Там есть мост дьявола</h3>
+            <span class="elements">№2</span>
+            <p class="description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+		  </div>
+		</li>
+
+		<li class="reasons-item reasons-item-bottom">
+		  <div class="reasons-inner">
+		    <h3>Небольшая площадь</h3>
+            <span>№3</span>
+            <p ">Все достопримечательности находятся очень близко</p>
+		  </div>
+		</li>
+
+		<li class="reasons-item reasons-item-bottom">
+		  <div class="reasons-inner">
+		    <h3>Красивая дорога</h3>
+		    <span>№4</span>
+            <p ">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+		  </div>	
+		</li>
+
+		<li class="reasons-item reasons-item-bottom">
+		  <div class="reasons-inner">
+		    <h3>Мало туристов</h3>
+            <span>№5</span>
+            <p ">Большинство едет в Гранд Каньон и толпится там</p>
+		  </div>	
+		</li>
+
+      </ol>
+      </section>
+
+      <div class="traveldate">
+        <b>Заинтересовались?</b>
+        <p >Укажите предпологаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <button class="form-btn" type="button">
+        	поиск гостиниц в седоне 	
+        </button>
+        <!-- Здесь будет форма -->
+      </div>
+      <div class="map">
+      	<!-- Здесь будет карта -->
+      </div>
+    </main>
+
+
+    <footer class="main-footer">
+      <p class="footer-hashtag">#visitsedona</p>
+        <ul class="footer-social">
+          <li><a class="social-button" href="#">Твиттер</a></li>
+          <li><a class="social-button" href="#">Фейсбук</a></li>
+          <li><a class="social-button" href="#">Ютуб</a></li>
+        </ul>
+        <div class="who-made-it">
+          <span>
+          	WebSite by
+          </span>
+            <a class="footer-copyright" href="https://htmlacademy.ru">
+      	      <img src="img/index-copyright.svg" width="198" height="42" alt="Логотип htmlacademy">
+            </a>
+        </div>
+    </footer>
+    </div>	
   </body>
 </html>
