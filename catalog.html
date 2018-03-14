@@ -25,11 +25,59 @@
     </header>
 
 
-    <main class="container">
-
-      <div class="filters">
-      	<!-- Здесь будет форма -->
-      </div>
+    <main class="container"> 
+    	<form class="filters" action=# method="get">
+    		<fieldset class="infrastructure">
+        	<legend>Инфраструктура:</legend>
+      		<ul>
+      			<li>
+      				<input class="checkbox" type="checkbox" name="pool" id="pool" checked>
+      				<label for="pool">Бассейн</label>
+      			</li>
+      			<li>
+      				<input class="checkbox" type="checkbox" name="parking" id="parking">
+      				<label for="parking">Парковка</label>
+      			</li>
+      			<li>
+      				<input class="checkbox" type="checkbox" name="wi-fi" id="wi-fi">
+     					<label for="wi-fi">Wi-Fi</label>
+      			</li>
+      		</ul>
+      	</fieldset>
+                
+      	<fieldset class="conditions">
+      		<legend>Тип жилья:</legend>
+        	<ul>
+        		<li>
+          		<input class="checkbox" type="checkbox" name="hotel" id="hotel" checked>
+          		<label for="hotel">Гостиница</label>
+          	</li>
+          	<li>
+          		<input class="checkbox" type="checkbox" name="motel" id="motel" checked>
+          		<label for="motel">Мотель</label>
+          	</li>
+          	<li>
+          		<input class="checkbox" type="checkbox" name="apartment" id="apartment" checked>
+          		<label for="apartment">Апартаменты</label>
+          	</li>
+        	</ul>
+      	</fieldset>
+                
+      	<fieldset class="price-a-day">
+      		<legend>Стоимость в сутки (р):</legend>
+      		<ul>
+      			<li>
+        			<input type="text" name="price-min" id="price-min" value="0">
+      		  	<label for="price-min">От:</label>
+      			</li>
+      			<li>
+        			<input type="text" name="price-max" id="price-max" value="3000">
+      		  	<label for="price-max">До:</label>
+      		  </li>	
+      		</ul>
+      	</fieldset>
+      	<button class="show-hotels-btn" type="submit">Показать</button>
+    	</form>
 
       <div class="sorting">
         <b>Найдено:<output>3</output></b>
@@ -129,27 +177,28 @@
              <p class="rating">Рейтинг: 9,2</p>
            </div>
         </li>
-
-        </ul>
+        
+    	</ul>
     </main>
 
 
     <footer class="main-footer">
-      <p class="footer-hashtag">#visitsedona</p>
-        <ul class="footer-social">
-          <li><a class="social-button" href="#">Твиттер</a></li>
-          <li><a class="social-button" href="#">Фейсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
-        </ul>
-        <div class="who-made-it">
-          <span>
-          	WebSite by
-          </span>
-            <a class="footer-copyright" href="https://htmlacademy.ru">
-      	      <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
-            </a>
-        </div>
+    	<p class="footer-hashtag">#visitsedona</p>
+      <ul class="footer-social">
+        <li><a class="social-button" href="#">Твиттер</a></li>
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Ютуб</a></li>
+      </ul>
+      <div class="who-made-it">
+        <span>
+         WebSite by
+        </span>
+          <a class="footer-copyright" href="https://htmlacademy.ru">
+      	    <img src="img/logo-htmlacademy.svg" width="115" height="41" alt="Логотип htmlacademy">
+          </a>
+      </div>
     </footer>
+
 
     </div>	
   </body>

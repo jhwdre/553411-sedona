@@ -26,7 +26,6 @@
 
 
     <main class="container">
-
       <div class="intro">
       	<img src="img/intro.png" width="1200" height="800" alt="Welcome to the gorgeous Sedona. Because the Grand Canyon sucks">
       </div>
@@ -94,7 +93,6 @@
             <p ">Большинство едет в Гранд Каньон и толпится там</p>
 		  </div>	
 		</li>
-
       </ol>
       </section>
 
@@ -104,8 +102,36 @@
         <button class="form-btn" type="button">
         	поиск гостиниц в седоне 	
         </button>
-        <!-- Здесь будет форма -->
       </div>
+
+      <form class="search-hotel" action=# method="get">
+
+        <div class="date-field">
+          <label for="date-checkin">Дата заезда:</label>
+          <input class="date" type="text" name="date-checkin" id="date-checkin" value="24 апреля 2017">
+          <button class="calendar" type="button"></button>
+        </div>
+        <div class="date-field">
+          <label for="date-checkout">Дата выезда:</label>
+          <input class="date" type="text" name="date-checkout" id="date-checkout" value="4 июля 2017">
+          <button class="calendar" type="button"></button>
+        </div>
+        <div class="persons-field">
+          <label for="number-adults">Взрослые:</label>
+          <button class="minus" type="button"> - </button>
+          <input class="number" type="text" name="number-adults" id="number-adults" min="1" value="2">
+          <button class="plus" type="button"> + </button>
+        </div>
+        <div class="persons-field">
+          <label for="number-children">Дети:</label>
+          <button class="minus" type="button"> - </button>
+          <input class="number" type="text" name="number-children" id="number-children" min="0" value="0">
+          <button class="plus" type="button"> + </button>
+        </div>
+
+        <button class="search-hotels-btn" type="submit">Найти</button>
+      </form>
+
       <div class="map">
       	<!-- Здесь будет карта -->
       </div>
@@ -128,6 +154,8 @@
             </a>
         </div>
     </footer>
+
+
     </div>	
   </body>
 </html>
